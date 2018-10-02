@@ -132,6 +132,11 @@ request::header(std::string const& header) const
 	return std::string();
 }
 
+const std::unordered_map<std::string, std::string>
+request::headers() const {
+    return _headers;
+}
+
 const std::string
 request::body() const
 {

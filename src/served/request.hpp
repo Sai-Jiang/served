@@ -160,6 +160,13 @@ public:
 	const std::string header(std::string const& header) const;
 
 	/*
+	 * Get all headers from this request.
+	 *
+	 * @return either all the headers, or an empty map if no header exists
+	 */
+	const std::unordered_map<std::string, std::string> headers() const;
+
+	/*
 	 * Get the body of the request.
 	 *
 	 * @return the body of the request
